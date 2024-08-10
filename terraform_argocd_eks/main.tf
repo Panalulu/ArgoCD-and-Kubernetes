@@ -1,4 +1,4 @@
-data "aws_eks_cluster" "this" {
+data "aws_eks_cluster" "this" {    
   name = var.eks_cluster_name
 }
 
@@ -13,7 +13,7 @@ provider "helm" {
     cluster_ca_certificate = base64decode(data.aws_eks_cluster.this.certificate_authority[0].data)
   }
 }
-
+#_______________
 
 resource "helm_release" "argocd" {
   name             = "argocd"
