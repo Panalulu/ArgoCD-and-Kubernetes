@@ -7,7 +7,7 @@ module "argocd_root" {
   source             = "./terraform_argocd_root_eks"
   eks_cluster_name   = "demo-dev"
   git_source_path    = "demo-dev/applications"
-  git_source_repoURL = "git@github.com:Panalulu/ArgoCD-and-Kubernetes.git"
+  git_source_repoURL = "https://github.com/Panalulu/ArgoCD-and-Kubernetes.git"
 }
 ```
 
