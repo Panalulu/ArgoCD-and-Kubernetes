@@ -18,8 +18,8 @@ repoServer:
 
 applicationSet:
   replicas: 2
-#----------------------------------------------------------------
-# Fixing issue with Stuck Processing for Ingress resource
+#--------------------------------------------------------------------
+# Fixing issue with Stuck Processing for Ingress resource 
 server:
   config:
     resource.customizations: |
@@ -27,4 +27,5 @@ server:
         health.lua: |
           hs = {}
           hs.status = "Healthy"
-          return hs        
+          return hs     
+          
