@@ -10,4 +10,3 @@ module "argocd" {
 }
 ```
 
-Copyleft (c) by Denis Astahov.
