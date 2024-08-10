@@ -19,3 +19,4 @@ variable "git_source_targetRevision" {
   type        = string
   default     = "HEAD"
 }
+# EKS Cluster name to deploy ArgoCD ROOT Application
