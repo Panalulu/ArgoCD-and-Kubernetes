@@ -22,7 +22,7 @@ module "argocd_dev_root" {
 
 # Can be deployed ONLY after ArgoCD deployment: depends_on = [module.argocd_prod]
 module "argocd_prod_root" {
-  source             = "./terraform_argocd_root_eks"
+  source             = "./terraform_argocd_root_eks"   # any changes in this file argocd will see at 
   eks_cluster_name   = "demo-prod"
   git_source_path    = "demo-prod/applications"
   git_source_repoURL = "https://github.com/Panalulu/ArgoCD-and-Kubernetes.git"
